@@ -135,6 +135,7 @@ volumes:
   db_data:
   wordpress_data:
 ```
+コピペしてから ctr+O でそのあと Enter 押して(保存)
 
 ### 3. 起動
 
@@ -159,9 +160,9 @@ WordPressの初期セットアップ画面が表示されたら成功です。
 
 コンテナを削除してもこのデータは永続化されます。
 
-## 参考
+## おまけ
 
-- [WordPress Docker公式](https://hub.docker.com/_/wordpress)
-- [MariaDB Docker公式](https://hub.docker.com/_/mariadb)
+check.pyでCPUの状態とか調べられる。
+
 
 
