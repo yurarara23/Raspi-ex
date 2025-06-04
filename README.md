@@ -30,7 +30,41 @@
 | WordPress  | ブログCMS本体（PHP製）   | wordpress:latest      |
 | MariaDB    | データベース（MySQL互換）| mariadb:10.11         |
 
-## インストール手順
+## 手順(コピペでOK)
+
+## 日本語環境構築
+
+### 1. Firefoxのインストールと既定ブラウザの設定
+日本語入力ができるブラウザを使いたいため，Firefoxをインストールし，既定のブラウザとして設定する。
+
+```bash
+sudo apt update
+sudo apt install firefox -y
+xdg-settings set default-web-browser firefox.desktop
+```
+
+### 2. 日本語入力環境（Fcitx + Mozc）のインストール
+
+
+```bash
+sudo apt update
+sudo apt install fcitx-mozc -y
+```
+
+### インストール後の設定手順
+
+1. 画面右上のキーボードアイコンをクリック
+
+2. 「設定」を開く
+
+3. 左下の「＋」ボタンを押す
+
+4. 一覧から Mozc を選択して追加
+
+必要に応じてログアウト・再ログイン、または再起動を行うと設定が適用されやすくなります。
+
+---
+## webサーバー構築&CMSインストール
 
 ## Dockerのインストール方法（Raspberry Pi OS）
 
