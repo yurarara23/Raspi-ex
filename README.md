@@ -30,7 +30,35 @@
 | WordPress  | ブログCMS本体（PHP製）   | wordpress:latest      |
 | MariaDB    | データベース（MySQL互換）| mariadb:10.11         |
 
-## インストール手順（超カンタン）
+## インストール手順
+
+## Dockerのインストール方法（Raspberry Pi OS）
+
+まずはDockerとDocker Composeのインストールが必要です。以下の手順をターミナルで実行してください。
+
+### 1. Dockerのインストール
+
+```bash
+curl -sSL https://get.docker.com | sh
+```
+
+### 2. Dockerの自動起動設定と権限追加
+
+```bash
+sudo systemctl enable docker
+sudo usermod -aG docker $USER
+```
+
+※このあと、再ログインまたは再起動してください。
+
+### 3. Docker Composeのインストール
+
+```bash
+sudo apt update
+sudo apt install -y docker-compose-plugin
+```
+
+---
 
 ### 1. ファイル作成
 
