@@ -36,13 +36,13 @@
 ## 日本語環境構築
 
 ### 1. Firefoxのインストールと既定ブラウザの設定
-日本語入力ができるブラウザを使いたいため，Firefoxをインストールし，既定のブラウザとして設定する。
+日本語入力ができるブラウザを使いたいため，Firefoxをインストール.
 
 ```bash
 sudo apt update
 sudo apt install firefox -y
-xdg-settings set default-web-browser firefox.desktop
 ```
+インストールできたら左上のラズパイアイコン→インターネット→Firefoxで開ける！
 
 ### 2. 日本語入力環境（Fcitx + Mozc）のインストール
 
