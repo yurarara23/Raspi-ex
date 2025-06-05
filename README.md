@@ -197,54 +197,6 @@ http://<ラズパイのIPアドレス>:8080/wp-admin
     python check.py
     ```
 
-# WindowsからSSHでRaspberry Piに接続する方法
-
-## 概要
-WindowsパソコンからRaspberry Piを遠隔操作するためには、SSH接続を使います。SSHを使うことで、モニターやキーボードを接続せずにラズベリーパイを操作できます。
-
-## 注意点
-- Raspberry PiはデフォルトでSSHサーバが無効になっています。
-- 接続前にSSHを有効化する必要があります。
-- Windows 10 にはSSHクライアントが標準で搭載されています。
-
----
-
-## SSHを有効にする手順（Raspberry Pi側）
-
-### 方法1：SDカードに「ssh」ファイルを作成（ヘッドレスセットアップ向け）
-
-1. Raspberry Pi OSを書き込んだSDカードをWindowsで開く。
-2. `boot`というパーティションが見えるので、その中に「ssh」という名前の空ファイルを作る。
-3. 拡張子はつけない。中身も空でOK。
-4. SDカードをRaspberry Piに挿して起動すれば、自動でSSHが有効になる。
-
----
-
-## Windowsからの接続手順
-
-1. Windowsのターミナル（PowerShellまたはWindows Terminal）を開く。
-2. 以下のコマンドを入力：
-
-   ```
-   ssh pi@<ラズパイのIPアドレス>
-   ```
-
-   例：
-   ```
-   ssh pi@192.168.0.123
-   ```
-
-3. 初回接続時に「この接続を許可しますか？」と聞かれたら「yes」と入力。
-4. パスワードを聞かれたら、Raspberry Piのパスワード（初期は「raspberry」）を入力。
-
----
-
-## 接続後にできること
-
-- ターミナル上でラズパイの操作
-- パッケージのインストールや設定
-- Docker、WordPress、サーバー構築などの作業
-
 ##　おまけ （WindowsからSSHでRaspberry Piに接続する方法）
 
 ## 概要
