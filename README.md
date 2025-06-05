@@ -197,7 +197,7 @@ http://<ラズパイのIPアドレス>:8080/wp-admin
     python check.py
     ```
 
-##　おまけ （WindowsからSSHでRaspberry Piに接続する方法）
+## おまけ（WindowsからSSHでRaspberry Piに接続する方法）
 
 ## 概要
 WindowsパソコンからRaspberry Piを遠隔操作するためには、SSH接続を使います。SSHを使うことで、モニターやキーボードを接続せずにラズベリーパイを操作できます。
