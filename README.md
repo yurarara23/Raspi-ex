@@ -31,7 +31,9 @@
 | WordPress  | ブログCMS本体（PHP製）   | wordpress:latest      |
 | MariaDB    | データベース（MySQL互換）| mariadb:10.11         |
 
-## 手順(コピペでOK、ベンチマーク忘れずに)
+## 手順(コピペでOK)
+簡単で
+す！
 
 ## 日本語環境構築
 タイムゾーン、キーボード配列設定、ロケール設定は各自でお願いします.
@@ -86,9 +88,10 @@ sudo systemctl enable docker
 sudo usermod -aG docker $USER
 ```
 
-※このあと、再ログインまたは再起動してください。
+# このあと、一回再起動してください!
 
 ### 3. Docker Composeのインストール
+再起動したら、再度ターミナルを開いて以下のコードを入力。
 
 ```bash
 sudo apt update
@@ -138,7 +141,8 @@ volumes:
   db_data:
   wordpress_data:
 ```
-コピペしてから ctr+O でそのあと Enter 押して(保存)
+nanoが開くので、コピペしてから ctr+O でそのあと Enter 押して(保存)
+その後 ctr+X でもとのターミナル画面に戻ってください。
 
 ### 3. 起動
 
@@ -148,7 +152,7 @@ docker compose up -d
 
 ### 4. ブラウザ（FireFox）で確認
 
-ラズパイのIPアドレスを調べて、以下にアクセス
+ラズパイのIPアドレスを調べて、FireFoxを用いて以下にアクセス
 
 ↓　初回アクセス時（WordPressのセットアップ画面）
 ```
